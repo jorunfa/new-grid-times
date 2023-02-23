@@ -96,14 +96,16 @@ const ActionGroupVerticalLaptopAndUp = styled(ActionGroupLaptopAndUp)`
 
 const MainHeader = styled(MaxWidthWrapper)`
   --margin-top: 32px;
+  --margin-bottom: 48px;
   display: flex;
   align-items: baseline;
   justify-content: center;
   margin-top: var(--margin-top);
-  margin-bottom: 48px;
+  margin-bottom: var(--margin-bottom);
   
   @media ${QUERIES.tabletAndUp} {
     --margin-top: 48px;
+    --margin-bottom: 72px;
   }
   
   @media ${QUERIES.laptopAndUp} {
