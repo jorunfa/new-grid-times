@@ -91,6 +91,7 @@ const ActionGroupVerticalLaptopAndUp = styled(ActionGroupLaptopAndUp)`
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  justify-self: end;
 `;
 
 const MainHeader = styled(MaxWidthWrapper)`
@@ -106,8 +107,9 @@ const MainHeader = styled(MaxWidthWrapper)`
   }
   
   @media ${QUERIES.laptopAndUp} {
-    justify-content: space-between;
     --margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
   }
 `;
 
