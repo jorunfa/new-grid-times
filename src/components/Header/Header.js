@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from 'styled-components/macro';
 import { Menu, Search, User } from 'react-feather';
+import styled from 'styled-components/macro';
 
-import { QUERIES } from '../../constants';
+import { QUERIES, WEIGHTS, COLORS } from '../../constants';
 
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import Logo from '../Logo';
 import Button from '../Button';
+import Logo from '../Logo';
+import MaxWidthWrapper from '../MaxWidthWrapper';
 
 const Header = () => {
   return (
@@ -117,6 +117,8 @@ const LogInButton = styled.button`
   font-style: italic;
   text-decoration: underline;
   font-size: ${14 / 16}rem;
+  font-weight: ${WEIGHTS.normal};
+  color: ${COLORS.gray[900]};
 `;
 
 export default Header;
