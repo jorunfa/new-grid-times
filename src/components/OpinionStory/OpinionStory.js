@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { QUERIES } from '../../constants';
 
 const OpinionStory = ({ id, title, author, avatar }) => {
   return (
     <a href={`/story/${id}`}>
       <Wrapper>
         <Avatar alt="" src={avatar} />
-        <div>
+        <TextWrapper>
           <AuthorName>{author}</AuthorName>
           <ArticleTitle>{title}</ArticleTitle>
-        </div>
+        </TextWrapper>
       </Wrapper>
     </a>
   );
@@ -17,6 +18,19 @@ const OpinionStory = ({ id, title, author, avatar }) => {
 
 const Wrapper = styled.article`
   color: var(--color-gray-900);
+  display: flex;
+  gap: 32px;
+  flex-direction: row-reverse;
+
+  @media ${QUERIES.tabletAndUp} {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
 `;
 
 const Avatar = styled.img`
@@ -25,6 +39,14 @@ const Avatar = styled.img`
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+
+  @media ${QUERIES.tabletAndUp} {
+    align-self: revert;
+  }
+`;
+
+const TextWrapper = styled.div`
+  width: 100%;
 `;
 
 const AuthorName = styled.p`
