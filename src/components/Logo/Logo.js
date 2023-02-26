@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import format from 'date-fns/format';
-import { QUERIES } from '../../constants';
+import { COLORS, QUERIES } from '../../constants';
 
 const Logo = (props) => {
   return (
@@ -33,6 +33,7 @@ const TodaysDate = styled.p`
   font-size: 1.125rem;
   font-weight: var(--font-weight-medium);
   margin-top: -1rem;
+  color: ${COLORS.gray[900]};
 `;
 
 export default Logo;

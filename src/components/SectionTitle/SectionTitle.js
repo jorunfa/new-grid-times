@@ -25,7 +25,8 @@ const Title = styled.h2`
   color: var(--color-gray-900);
   font-weight: var(--font-weight-bold);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 11px;
+  margin-top: 2px;
 `;
 
 const CornerLink = styled.a`

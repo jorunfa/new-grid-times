@@ -95,7 +95,7 @@ const ActionGroupVerticalLaptopAndUp = styled(ActionGroupLaptopAndUp)`
 `;
 
 const MainHeader = styled(MaxWidthWrapper)`
-  --margin-top: 32px;
+  --margin-top: 28px;
   --margin-bottom: 48px;
   display: flex;
   align-items: baseline;
