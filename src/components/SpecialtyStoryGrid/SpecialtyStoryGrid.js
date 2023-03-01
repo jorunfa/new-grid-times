@@ -70,22 +70,22 @@ const MarketCards = styled.div`
 `;
 
 const SportsSection = styled.section`
+  display: grid;
 `;
 
 const SportsStories = styled.div`
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 
   @media ${QUERIES.tabletAndUp} {
-    display: flex;
+    grid-template-columns: revert;
+    grid-auto-flow: column;
+    grid-auto-columns: 220px;
     overflow: auto;
+    padding-right: 40px;
     padding-bottom: 8px;
     margin-bottom: -8px;
-
-    & > * {
-      flex: 0 0 220px;
-    }
   }
 `;
 
