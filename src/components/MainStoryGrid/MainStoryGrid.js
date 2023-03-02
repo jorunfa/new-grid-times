@@ -94,6 +94,7 @@ const SecondaryStorySection = styled.section`
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;
+  margin-top: -9px;
 `;
 
 const StoryList = styled.div`
